@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SecureVault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i data-lucide="shield"></i>
+                <span>SecureVault</span>
+            </a>
+            <div class="nav-links">
+                <button id="logoutBtn" class="btn btn-ghost">
+                    <i data-lucide="log-out"></i>
+                    Logout
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <div class="container">
+            <h1 class="welcome-message">Welcome to your Secure Vault</h1>
+            
+            <div class="dashboard-grid">
+                <a href="password-manager.html" class="dashboard-card">
+                    <i data-lucide="key"></i>
+                    <h2>Password Manager</h2>
+                    <p>Securely store and manage your passwords</p>
+                </a>
+                
+                <a href="secure-messaging.html" class="dashboard-card">
+                    <i data-lucide="message-square"></i>
+                    <h2>Secure Messaging</h2>
+                    <p>Send encrypted messages to other users</p>
+                </a>
+                
+                <a href="settings.html" class="dashboard-card">
+                    <i data-lucide="settings"></i>
+                    <h2>Settings</h2>
+                    <p>Manage your account and security settings</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
