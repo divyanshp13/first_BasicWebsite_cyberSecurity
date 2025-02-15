@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - SecureVault</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <i data-lucide="shield"></i>
+          <span>SecureVault</span>
+        </a>
+        <div class="nav-links">
+          <a href="contactus.html" class="btn btn-primary">Get Started</a>
+          <button id="logoutBtn" class="btn btn-ghost">
+            <i data-lucide="log-out"></i>
+            Logout
+          </button>
+          <button id="theme-toggle" class="btn btn-icon">
+            <i data-lucide="sun" class="icon-sun"></i>
+            <i data-lucide="moon" class="icon-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="dashboard-container">
+      <div class="container">
+        <h1 class="welcome-message">Welcome to your Secure Vault</h1>
+
+        <div class="dashboard-grid">
+          <a href="password-manager.html" class="dashboard-card">
+            <i data-lucide="key"></i>
+            <h2>Password Manager</h2>
+            <p>Securely store and manage your passwords</p>
+          </a>
+
+          <a href="secure-messaging.html" class="dashboard-card">
+            <i data-lucide="message-square"></i>
+            <h2>Secure Messaging</h2>
+            <p>Send encrypted messages to other users</p>
+          </a>
+
+          <a href="settings.html" class="dashboard-card">
+            <i data-lucide="settings"></i>
+            <h2>Settings</h2>
+            <p>Manage your account and security settings</p>
+          </a>
+        </div>
+      </div>
+
+<div style="text-align: center; align-items: center; justify-content: center;border: 2px;margin-top: 10px;  color: var(--muted-foreground);
+text-decoration: none;
+transition: color 0.2s;    transition: transform 0.2s, box-shadow 0.2s;cursor: pointer;">
+    <h2>What we provide!</h2>
+
+</div>
+      <section class="features">
+        <div class="container">
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i data-lucide="lock"></i>
+              <h3>Password Manager</h3>
+              <p>
+                Store and manage your passwords securely with military-grade
+                encryption.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="message-square"></i>
+              <h3>Secure Messaging</h3>
+              <p>
+                End-to-end encrypted messaging with self-destructing messages.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="key"></i>
+              <h3>Master Password</h3>
+              <p>One master password to secure all your credentials.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="shield"></i>
+              <h3>Data Protection</h3>
+              <p>Your data is encrypted and only accessible by you.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="refresh-cw"></i>
+              <h3>Auto Backup</h3>
+              <p>Automatic encrypted backups to keep your data safe.</p>
+            </div>
+            <div class="feature-card">
+              <i data-lucide="user-check"></i>
+              <h3>Multi-Factor Auth</h3>
+              <p>Additional security layer with multi-factor authentication.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <i data-lucide="shield"></i>
+          <span>SecureVault</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="contactus.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

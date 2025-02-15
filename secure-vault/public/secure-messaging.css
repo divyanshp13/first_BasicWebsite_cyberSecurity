@@ -1,0 +1,71 @@
+.secure-messaging-container {
+    padding-top: 5rem;
+  }
+  
+  #securityCodeForm {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #securityCodeForm input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  
+  #chatWindow {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #messageList {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .message {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+  }
+  
+  .message.sent {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    align-self: flex-end;
+  }
+  
+  #chatCodeDisplay {
+    background-color: var(--secondary); /* Or any color you prefer */
+    color: var(--secondary-foreground);
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+  .message.received {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+    align-self: flex-start;
+  }
+  
+  #messageForm {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #messageInput {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  
+  
