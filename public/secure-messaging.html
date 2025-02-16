@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Messaging - SecureVault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="secure-messaging.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <i data-lucide="shield"></i>
+            <span>SecureVault</span>
+          </a>
+          <div class="nav-links">
+            <a href="dashboard.html" class="btn btn-primary">Dashboard</a>
+            <button id="logoutBtn" class="btn btn-ghost">
+              <i data-lucide="log-out"></i>
+              Logout
+            </button>
+            <button id="theme-toggle" class="btn btn-icon">
+              <i data-lucide="sun" class="icon-sun"></i>
+              <i data-lucide="moon" class="icon-moon"></i>
+            </button>
+          </div>
+        </div>
+    </nav>
+
+    <main class="secure-messaging-container">
+        <div class="container">
+            <h1>Secure Messaging</h1>
+            <div id="chatCodeDisplay" style="display: none; text-align: center; margin-bottom: 1rem;"></div>
+            <div id="securityCodeForm">
+                <h2>Enter Security Code</h2>
+                <input type="text" id="securityCode" placeholder="Enter 6-digit code">
+                <button id="enterChatBtn" class="btn btn-primary">Enter Chat</button>
+                <button id="generateChatBtn" class="btn btn-primary">Generate Chat Code</button>
+            </div>
+            <div id="chatWindow" style="display: none;">
+                <div id="messageList"></div>
+                <form id="messageForm">
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+                <button id="leaveChatBtn" class="btn btn-secondary">Leave Chat</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-database-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="secure-messaging.js"></script>
+</body>
+</html>
